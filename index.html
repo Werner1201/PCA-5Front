@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.js"></script>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="_estilo\index_estilo.css">
+	<title> LabVad Unigranrio </title>
+</head>
+<body>
+
+    <div class="container" id="interface1">
+	<img id= "logo" src="_imagens\logoUni.webp">
+	<h2> LabVad: Laboratório Virtual de Atividades Didáticas em Ciências e Robótica </h2>
+	<h3> Login: </h3>
+
+	<form id="login" method="post" action="mailto:dd.eeiriz@gmail.com">
+		<p> <label for="email"> Email: </label>
+		<input type="text" id="email"/></p>
+		
+		<p> <label for="senha"> Senha: </label>
+		<input type="password" id="senha"/></p>
+
+	<!--	<p><input id= "botao" href="" type="button" value="Entrar" onclick="enviarDados();" /> -->
+		<p> <a id="entrar" href="home.html"> Entrar </a> </p>
+		<p> <a id="recSenha" href=""> Recuperar Senha </a> </p>
+		<p> <a id="fazCadastro" href=""> Cadastro </a> </p>
+	</form>
+
+
+	<form id="cadastro" method="post" action="mailto:dd.eeiriz@gmail.com">
+		<h2 id="reCad"> Realizar Cadastro </h2>
+		
+		<input type="text" id="user" placeholder="Nome de Usuário"/></p>
+		<input type="text" id="e-mail" placeholder="Email"/></p>
+		<input type="text" id="instituicao" placeholder="Instituição"/></p>
+		<input type="password" id="sen" placeholder="Senha"/></p>
+		<input type="password" id="confSenha"  placeholder="Confirmação da Senha"/></p>
+
+
+		<p> <a id="enviar" href=""> Enviar </a> </p>
+
+	</form>
+    </div>
+
+
+</body>
+</html>

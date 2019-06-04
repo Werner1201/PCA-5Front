@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+    width: 400px;
+    height: 300px;
+    background-image: url(../_imagens/img2fundo.jpg);
+}
+h2 {
+	color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
+	font-size: 30px;
+}
+h3 {
+	color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
+}
+form#login {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 80px;
+	margin-top: 30px;
+}
+input#email {
+	border-radius: 5px;
+	font-size: 15px;
+	margin-left: 8px;
+}
+input#senha {
+	border-radius: 5px;
+	font-size: 15px;
+	margin-left: 3px;
+
+
+}
+/* QUANDO ENTRAR O BOTÃO DE NOVO
+#botao {
+	font-size: 17px;
+	margin-top: 5px;
+ 	margin-right: 0px;
+ 	margin-left: 10px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	border: 2px solid black;
+ 	background-color: #4169E1;
+ 	color: white;
+ 	cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+a#recSenha {
+	position: absolute;
+	font-size: 17px;
+	margin-top: -39px;
+ 	margin-right: 0px;
+ 	margin-left: 90px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+a#fazCadastro {
+	position: absolute;
+	font-size: 17px;
+	margin-top: -39px;
+ 	margin-right: 0px;
+ 	margin-left: 250px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+*/
+a#entrar {
+	font-size: 17px;
+	margin-top: 70px;
+ 	margin-right: 0px;
+ 	margin-left: -35px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	color: white;
+ 	cursor: pointer;
+    font-weight: bold;
+}
+a#recSenha {
+	position: absolute;
+	font-size: 17px;
+	margin-top: -35px;
+ 	margin-right: 0px;
+ 	margin-left: 38px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+a#fazCadastro {
+	position: absolute;
+	font-size: 17px;
+	margin-top: -35px;
+ 	margin-right: 0px;
+ 	margin-left: 200px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+#interface1{
+ 	background-color: rgba(7, 0, 0,0.5);
+ 	position: absolute;
+ 	display: inline-block;
+ 	margin-bottom: 100px;
+ 	margin-top: 20px;
+ 	margin-right: 200px;
+ 	margin-left: 180px;
+	font-family: 'Montserrat', sans-serif;
+}
+img#logo {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+form#cadastro {
+	position: relative;
+	margin-top: 500px;
+	height: 400px;
+	margin-bottom: -18px;
+	background-image: url(../_imagens/img1fundo.jpg);
+}
+h2#reCad {
+	margin-left: 10px;
+	margin-top: 500px;
+}
+input {
+	padding: 7px;
+	border-radius: 5px;
+	font-size: 20px;
+	margin-left: 10px;
+	width: 400px;
+}
+a#enviar {
+	margin-left: 10px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	color: white;
+ 	cursor: pointer;
+    font-weight: bold;
+
+
+}
+

@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  margin: 0%; /* Retira a margem padrão do corpo do site */
+}
+
+img#banner {
+  float: left;
+  width: 100%;
+  max-height: 30vh;
+}
+
+div#container {
+  width: auto;
+  min-height: 100%;
+  background-color: blue; /* Essa linha deve ser EXCLUIDA antes da entrega final */
+}
+
+div#barraMenu {
+  clear: both; /* Impede sobreposição com outros elementos */
+  background-color: #4682b4; /* SteelBlue */
+  width: 100%;
+  height: auto;
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  flex-shrink: 1;
+
+  flex-grow: 1;
+
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+
+.Menu {
+  display: flex; /* Exibir em bloco lado a lado */
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+
+img#logo {
+  height: 85%;
+  margin-left: 4vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div#menu {
+  margin-left: auto; /* alinha o Menu a direita  --margin-right: 4vw;--   */
+}
+
+ul {
+  list-style: none; /* Esconde marcadores de itens do menu */
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+li {
+  display: flex; /* Exibe os itens do menu em horizontal */
+  background-color: #4682b4; /* SteelBlue */
+  padding: 1vw; /* Preenche os botões do menu */
+  margin-right: 0.5vw; /* Cria um espaço de margem entre os botões */
+  transition: box-shadow 0.3s;
+}
+
+li.BtPropriedades {
+  border-left: 3px solid #363636;
+  border-bottom: 3px solid #363636;
+  border-top: 3px solid #363636;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px #000;
+  transition: border 0.2s;
+}
+
+#green:hover {
+  border-left: 3px solid #7cfc00;
+  border-bottom: 3px solid #7cfc00;
+  border-top: 3px solid #7cfc00;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #00ff00;
+}
+
+#green:hover > a.LinkMenu {
+  color: #7cfc00;
+}
+
+#blue:hover {
+  border-left: 3px solid #0000cd;
+  border-bottom: 3px solid #0000cd;
+  border-top: 3px solid #0000cd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #6495ed;
+}
+
+#blue:hover > a.LinkMenu {
+  color: #0000cd;
+}
+
+#yellow:hover {
+  border-left: 3px solid #ffd700;
+  border-bottom: 3px solid #ffd700;
+  border-top: 3px solid #ffd700;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #f0e68c;
+}
+
+#yellow:hover > a.LinkMenu {
+  color: #ffd700;
+}
+
+#red:hover {
+  border-left: 3px solid #b22222;
+  border-bottom: 3px solid #b22222;
+  border-top: 3px solid #b22222;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #f00;
+}
+
+#red:hover > a.LinkMenu {
+  color: #b22222;
+}
+
+#white:hover {
+  border-left: 3px solid #fffafa;
+  border-bottom: 3px solid #fffafa;
+  border-top: 3px solid #fffafa;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #fff;
+}
+
+#white:hover > a.LinkMenu {
+  color: #fffafa;
+}
+
+a.LinkMenu {
+  text-decoration: none; /* Retira a decoração de texto dos links de menu */
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  color: #282923;
+  transition: color 0.2s;
+}
+
+div#modoNoturno {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex-direction: column;
+  align-content: center;
+}
+
+span#modoNoturno {
+  font-size: 10pt;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #282923;
+}
+/* Trilho de deslize */
+.Switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 18px;
+  margin-left: 30%;
+  margin-top: 5px;
+}
+
+.Switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* Botão de deslize */
+.Slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 17px;
+}
+
+.Slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: -1px;
+  bottom: -1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .Slider {
+  background-color: #9acd32; /* Cor anterior: #2196F3; */
+}
+
+input:focus + .Slider {
+  box-shadow: 0 0 1px #9acd32; /* Cor anterior: #2196F3; */
+}
+/* Faz o deslizamento do botão */
+input:checked + .Slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateY(22px);
+  transform: translateX(22px);
+}
+
+div#conteudo {
+  width: 100%;
+  height: 60vh;
+  background-color: #faf0e6;
+  display: flex; /* Flexibiliza o posicionamento dos elementos filhos */
+  align-items: center; /* Alinha o(s) elemento(s) filho(s) ao centro vertical */
+  justify-content: center; /* Alinha o(s) elemento(s) filho(s) ao centro horizontal */
+  margin: 0;
+  -webkit-transition: background-color, 0.2s;
+  transition: background-color, 0.8s;
+}
+
+iframe {
+  width: 100%;
+  max-width: 99vw;
+  height: 100%;
+  background-color: #faf0e6;
+  border-style: none;
+  -webkit-transition: background-color, 0.2s;
+  transition: background-color, 0.8s;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script src="./_javascript/jquery-3.4.1.js"></script>
+    <script src="./_javascript/jquery.cycle.all.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="_estilo\home_estilo.css" />
+    <script src="_javascript/funcoes.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img id="banner" src="_imagens\bannerHome.png" />
+    </header>
+    <div id="container">
+      <div id="barraMenu" class="Menu">
+        <div class="Menu"><img id="logo" src="_imagens\logoUni.webp" /></div>
+        <div id="menu" class="Menu">
+          <nav>
+            <ul>
+              <li
+                id="green"
+                class="BtPropriedades"
+                onclick="MudarConteudo('conteudo.html#agendamento')"
+              >
+                <a class="LinkMenu" href="#">Agendamento</a>
+              </li>
+              <li
+                id="blue"
+                class="BtPropriedades"
+                onclick="MudarConteudo('conteudo.html#execucao')"
+              >
+                <a class="LinkMenu" href="#">Execução</a>
+              </li>
+              <li
+                id="yellow"
+                class="BtPropriedades"
+                onclick="MudarConteudo('conteudo.html#minhaConta')"
+              >
+                <a class="LinkMenu" href="#">Minha Conta</a>
+              </li>
+              <li
+                id="red"
+                class="BtPropriedades"
+                onclick="MudarConteudo('conteudo.html#ajuda')"
+              >
+                <a class="LinkMenu" href="#">Ajuda</a>
+              </li>
+              <li id="white" class="BtPropriedades">
+                <a class="LinkMenu" href="index.html">Sair</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="modoNoturno">
+          <span id="modoNoturno">Modo Noturno</span>
+          <label class="Switch">
+            <input
+              type="checkbox"
+              name="botaoNoturno"
+              onclick="AlterarCorDeFundo()"
+            />
+            <span class="Slider"></span>
+          </label>
+        </div>
+      </div>
+      <div id="conteudo">
+        <iframe src="conteudo.html" id="frame" scrolling="no"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
