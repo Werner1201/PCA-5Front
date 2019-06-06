@@ -222,7 +222,7 @@ input:checked + .Slider:before {
 
 div#conteudo {
   width: 100%;
-  height: 60vh;
+  height: 1000px;
   background-color: #faf0e6;
   display: flex; /* Flexibiliza o posicionamento dos elementos filhos */
   align-items: center; /* Alinha o(s) elemento(s) filho(s) ao centro vertical */

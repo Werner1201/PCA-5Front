@@ -6,9 +6,9 @@ body {
   display: inline-flex;
 }
 
-p {
-  width: 1500px;
-  height: 500px;
+#calendarContainer{
+  background: white;
+  margin: 1px;
 }
 
 #nav {

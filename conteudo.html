@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <script src="./_javascript/jquery-3.4.1.js"></script>
-    <script src="./_javascript/jquery.cycle.all.js"></script>
-    <title>Conteudo</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="_estilo\conteudo_estilo.css" />
-    <script src="_javascript/funcoes.js"></script>
-  </head>
 
-  <body onload="pager();">
-    <div id="wrapper">
-      <!--Procurar um jeito de controlar o "slide"-->
-      <!--
+<head>
+  <script src="./_javascript/jquery-3.4.1.js"></script>
+  <script src="./_javascript/jquery.cycle.all.js"></script>
+  <script src='_fullCalendar/core/main.js'></script>
+  <script src='_fullCalendar/daygrid/main.js'></script>
+  <title>Conteudo</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="_estilo/conteudo_estilo.css" />
+  <link href='_fullCalendar/core/main.css' rel='stylesheet' />
+  <script src='_fullCalendar/interaction/main.js'></script>
+  <link href='_fullCalendar/daygrid/main.css' rel='stylesheet' />
+  <script src="_javascript/funcoes.js"></script>
+</head>
+
+<body onload="pager(); calendario();">
+  <div id="wrapper">
+    <!--Procurar um jeito de controlar o "slide"-->
+    <!--
   Ao preencher qualquer div de conteúdo, certifique-se de excluir a linha "background-color" 
 		no documento "conteúdo_estilo.css" referente a respectiva div. -->
-      <div id="agendamento">
-        <p>1</p>
-        <!--
+    <div id="agendamento">
+      <div id="calendarContainer">
+        <div id="calendar"></div>
+      </div>
+
+      <!--
 			Aqui entra o calendário para reserva de horário.
 			-->
-      </div>
-      <div id="execucao">
-        <p>2</p>
-        <!-- 
+    </div>
+    <div id="execucao">
+      <p>2</p>
+      <!-- 
 			Aqui entra três elementos principais para execução do experimento.
 			- Video com a imagem da câmera filmando o experimento;
 			- Campo para programar com o código arduino;
 			- Painel com os scripts do usuário salvos (se houver);
 			-->
-      </div>
-      <div id="minhaConta">
-        <p>3</p>
-        <!-- 
+    </div>
+    <div id="minhaConta">
+      <p>3</p>
+      <!-- 
 			Aqui entra um painel com as informações da conta do usuário.
 			-->
-      </div>
-      <div id="ajuda">
-        <p>4</p>
-        <!-- 
+    </div>
+    <div id="ajuda">
+      <p>4</p>
+      <!-- 
 			Aqui entra um conteúdo explicativo com as informações a respeito do LabVad.
 			- Como usar o site;
 			- Outras informações a respeito dos experimentos arduino.
 			-->
-      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

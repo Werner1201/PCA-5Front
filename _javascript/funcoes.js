@@ -42,41 +42,21 @@ function pager() {
   $("#wrapper")
     .before('<div id="nav">')
     .cycle({
-      fx: "scrollRight",
+      fx: "scrollDown",
       speed: "300",
       timeout: 0,
       pager: "#nav"
     });
 }
 
-/*
-function ciclo(local) {
-  if (local == null || undefined) {
-    console.log("inicializacao");
-    $("#wrapper").cycle();
-    //$("#wrapper").cycle("pause");
-  }
-  switch (local) {
-    case 0:
-      //$("#wrapper").cycle("resume");
-      $("#wrapper").cycle("goto", 0);
-      //$("#wrapper").cycle("pause");
-      break;
-    case 1:
-      //$("#wrapper").cycle("resume");
-      $("#wrapper").cycle("goto", 1);
-      //$("#wrapper").cycle("pause");
-      break;
-    case 2:
-      // $("#wrapper").cycle("resume");
-      $("#wrapper").cycle("goto", 2);
-      //$("#wrapper").cycle("pause");
-      break;
-    case 3:
-      //$("#wrapper").cycle("resume");
-      $("#wrapper").cycle("goto", 3);
-      //$("#wrapper").cycle("pause");
-      break;
-  }
+function calendario() {
+  let CalendarEl = document.getElementById('calendar');
+  let calendar = new FullCalendar.Calendar(CalendarEl, {
+    plugins: ['interaction', 'dayGrid'],
+    selectable: true
+  });
+  calendar.render();
+  calendar.setOption('height', 600);
+  calendar.option('aspectRatio', 0.5);
 }
-*/
+
